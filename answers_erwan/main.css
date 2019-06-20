@@ -11,8 +11,11 @@ header {
     background-color: #444;
     width: 100%;
 }
+
 main {
     margin-top: 200px;
+/*     question 15     -----------------------------------------*/
+    text-decoration: line-through;
 }
 
 li {
@@ -46,13 +49,36 @@ li {
     background-size: cover;
 }
  /*  ---------------  question 7 -----------------------*/
-.spansection span:nth-child(2n) {
+.spansection span:nth-child(10) {
     background-color: aqua;
 }
-.spansection span:nth-child(2n+1) {
+.spansection span:nth-child(1) {
     background-color: green;
 }
-
+.spansection span:nth-child(2) {
+    background-color:#111;
+}
+.spansection span:nth-child(3) {
+    background-color:#222;
+}
+.spansection span:nth-child(4) {
+    background-color: #333;
+}
+.spansection span:nth-child(5) {
+    background-color: #444;
+}
+.spansection span:nth-child(6) {
+    background-color: #555;
+}
+.spansection span:nth-child(7) {
+    background-color: #666;
+}
+.spansection span:nth-child(8) {
+    background-color: #777;
+}
+.spansection span:nth-child(9) {
+    background-color: #888;
+}
 /* ----------------- question 8  the rest at the bottom of the page -----------*/
 .mediaquery {
     background-color: blue;
@@ -74,9 +100,66 @@ li {
     box-sizing: border-box;
     bottom: 0;
 }
-/* ---- for question 9 end and 10 see header and main on tp of this file ----*/
-/* ------------------   question 10 -------------------------------------*/
+/* -- for end of question 9 and  question 10 see header and main on top of this file -*/
+/* ------------------   question 11 -------------------------------------*/
 
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.item {
+    flex-grow: 1;
+}
+
+/*  ------------------------question 12 -------------------------------- */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, 150px);
+    border: 2px dashed darkgreen;
+    grid-gap: 5px;
+}
+.wrapper div {
+    background-color: lawngreen;
+    border: 2px solid blue;
+}
+.wrapper .two {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: cyan;
+}
+.wrapper .three {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: yellow;
+}
+.wrapper .seven {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: orangered;
+}
+
+
+
+/*  ------------------------- question 13 ---------------------------------------*/
+.classquestion13 {
+    color: blueviolet;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ---------------------------- question 14 ------------------------*/
+footer ul li a:visited {
+    color: black;
+}
+
+footer ul li a:hover {
+    color: lightgreen;
+}
+
+/*---------------------- question 15 ------------------------------------- */
 
 
 
